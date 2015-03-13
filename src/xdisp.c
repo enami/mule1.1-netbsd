@@ -2677,6 +2677,7 @@ decode_mode_spec (w, c, maxwidth)
 
   Returns ending hpos */
 
+Lisp_Object_Int
 display_string (w, vpos, string, hpos, truncate, mincol, maxcol)
      struct window *w;
      int vpos;

@@ -1061,3 +1061,13 @@ extern unsigned char *egetenv ();
 #define egetenv getenv
 #endif
 
+/*
+ * Following prototypes are quick hack to suport LP64 machines.
+ */
+#include "extra_proto.h"
+extern void wait_reading_process_input (int, Lisp_Object_Int, int);
+struct window;
+extern Lisp_Object_Int display_string (struct window *w, int vpos,
+				       unsigned char *string, int hpos,
+				       char truncate, Lisp_Object_Int mincol,
+				       Lisp_Object_Int maxcol);
