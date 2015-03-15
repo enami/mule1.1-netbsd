@@ -1634,3 +1634,5 @@ extern Lisp_Object_Int display_string (struct window *w, int vpos,
 				       unsigned char *string, int hpos,
 				       char truncate, Lisp_Object_Int mincol,
 				       Lisp_Object_Int maxcol);
+extern int scroll_screen_lines (Lisp_Object_Int from, Lisp_Object_Int end,
+				Lisp_Object_Int amount);
