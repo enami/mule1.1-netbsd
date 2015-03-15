@@ -66,7 +66,7 @@ the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
    Ones defined so far include vax, m68000, ns16000, pyramid,
    orion, tahoe, APOLLO and many others */
 
-#define INTEL386
+/* #define INTEL386 */
 
 /* Use type int rather than a union, to represent Lisp_Object */
 

@@ -107,6 +107,7 @@ the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
 #endif
 #include "lisp.h"
 #include "buffer.h"
+#include "process.h"
 #include "window.h"
 #include "commands.h"
 #include "mule.h"		/* 91.10.21 by K.Handa */
@@ -698,7 +699,6 @@ cancel_my_columns (w)
       new_screen->used[vpos] = start;
 }
 
-extern Lisp_Object current_attribute (); /* 92.1.28 by K.Handa */
 
 /* These functions try to perform directly and immediately on the screen
    the necessary output for one change in the buffer.

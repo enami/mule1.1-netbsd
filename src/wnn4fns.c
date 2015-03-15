@@ -334,7 +334,7 @@ Lisp_Object	Vwnn_uniq_level;
 int		lc_sisheng;
 
 /* Lisp functions definition */
-
+Lisp_Object Fwnn_set_param (int, Lisp_Object *);
 
 
 DEFUN ("wnn-server-open", Fwnn_open, Swnn_open,
@@ -1463,7 +1463,6 @@ char *s;
   Lisp_Object		args[1];
   char			mbuf[512];
   unsigned char		lc;
-  extern Lisp_Object 	Fmessage();
   int			snum;
   if ((snum = check_wnn_server_type()) == -1) return;
   lc = lc_wnn_server_type[snum];
